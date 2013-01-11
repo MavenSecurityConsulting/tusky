@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="1.1" toolsVersion="2182" systemVersion="11E53" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="VtX-JT-YRW">
+    <dependencies>
+        <deployment defaultVersion="1296" identifier="iOS"/>
+        <development defaultVersion="4200" identifier="xcode"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1181"/>
+    </dependencies>
+    <scenes>
+        <!--Welcome View Controller-->
+        <scene sceneID="5">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
+                <viewController id="2" customClass="WelcomeViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3">
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="qcC-fp-HcE"/>
+                    <connections>
+                        <segue destination="SmY-N2-4tD" kind="push" identifier="createNewAccountSegue" id="Kac-5i-Itn"/>
+                        <segue destination="vTd-dr-PrT" kind="push" identifier="loginSegue" id="cEN-xS-Pyp"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="214" y="89"/>
+        </scene>
+        <!--Login View Controller - Tusky-->
+        <scene sceneID="sHV-x8-KTB">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kWz-qK-Ghp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="vTd-dr-PrT" customClass="LoginViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="F2H-zU-UID">
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Tusky" id="PTd-ww-G30"/>
+                    <connections>
+                        <segue destination="0pS-gn-za6" kind="push" identifier="segueToAllTasksAfterLogin" id="05q-j9-p1M"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="659" y="486"/>
+        </scene>
+        <!--Create Account View Controller - Tusky-->
+        <scene sceneID="rwH-SQ-rEI">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Cfr-tn-dCh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="SmY-N2-4tD" customClass="CreateAccountViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jBr-Kj-cMV">
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Tusky" id="0E1-vR-vSh"/>
+                    <connections>
+                        <segue destination="0pS-gn-za6" kind="push" identifier="segueToAllTasksAfterRegistration" id="pKg-65-4aP"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="694" y="-452"/>
+        </scene>
+        <!--All Tasks View Controller - All Tasks-->
+        <scene sceneID="eMr-4g-uDP">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="b85-s1-vKc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="0pS-gn-za6" customClass="AllTasksViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Qpt-Os-E4R">
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="All Tasks" id="uuY-f0-Rqj"/>
+                    <connections>
+                        <segue destination="2" kind="push" identifier="segueAfterLogout" id="44Z-Dv-Tn3"/>
+                        <segue destination="GII-5w-UXh" kind="push" identifier="segueToCreateTask" id="R7g-66-tBf"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="2038" y="-360"/>
+        </scene>
+        <!--Create Task View Controller - New Task-->
+        <scene sceneID="rIS-o6-fUk">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pVC-sp-FVa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="GII-5w-UXh" customClass="CreateTaskViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Lqn-OH-ZCH">
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="New Task" id="fsL-No-piS"/>
+                    <connections>
+                        <segue destination="0pS-gn-za6" kind="push" identifier="segueToAllTasksView" id="o5h-ce-wpg"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="2052" y="730"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="koM-eM-z0X">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BaR-3B-UPx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController id="VtX-JT-YRW" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="gvi-bv-jVr">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="2" kind="relationship" relationship="rootViewController" id="pNl-HG-r1K"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="-298" y="89"/>
+        </scene>
+    </scenes>
+    <classes>
+        <class className="AllTasksViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/AllTasksViewController.h"/>
+        </class>
+        <class className="CreateAccountViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/CreateAccountViewController.h"/>
+        </class>
+        <class className="CreateTaskViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/CreateTaskViewController.h"/>
+        </class>
+        <class className="LoginViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/LoginViewController.h"/>
+        </class>
+        <class className="WelcomeViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/WelcomeViewController.h"/>
+        </class>
+    </classes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>
