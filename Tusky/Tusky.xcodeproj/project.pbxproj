@@ -224,12 +224,18 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0430;
+				TargetAttributes = {
+					B33302D51601A6B00006C35B = {
+						DevelopmentTeam = AR7LP5L64P;
+					};
+				};
 			};
 			buildConfigurationList = B33302D01601A6AF0006C35B /* Build configuration list for PBXProject "Tusky" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = B33302CB1601A6AF0006C35B;
@@ -353,9 +359,12 @@
 		B33302F51601A6B00006C35B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				DEVELOPMENT_TEAM = AR7LP5L64P;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Tusky/Tusky-Prefix.pch";
 				INFOPLIST_FILE = "Tusky/Tusky-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -364,9 +373,12 @@
 		B33302F61601A6B00006C35B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				DEVELOPMENT_TEAM = AR7LP5L64P;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Tusky/Tusky-Prefix.pch";
 				INFOPLIST_FILE = "Tusky/Tusky-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
